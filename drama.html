@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>drama</title>
+	</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+figure {
+  float: center;
+  width: 98%;
+  text-align: center;
+  font-style: Lato;
+  font-size: default;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+</style>
+</head>
+<body>
+
+<center>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <h1><div class="w3-right w3-padding-16">Nanad's Favourite Drama</div></h1>
+  </div>
+</div>
+</center>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="file:///C:/Users/Nadhirah/Documents/SEMESTER%205/IMD%20311/personal%20website/index.html">HOME</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+</div><br><br>
+
+<figure>
+  <img src="whileuweresleeping.jpg"
+    width="500" height="350"
+    alt="extremejob">
+  <figcaption><h>WHILE YOU WERE SLEEPING (2017)</h>
+  <p> A South Korean television series starred by Lee Jong-suk, Bae Suzy, Jung Hae-in, Lee Sang-yeob, and Ko Sung-hee.
+  Consisting of sixteen chapters distributed over 32 episodes,
+  this legal drama-fantasy television series centers on the lives on three young adults, a field reporter, a prosecutor, and a police officer who have acquired the ability to foresee future events through their dreams.
+  Since they all have visions through their dreams of terrible things that will happen to people in the future, they tried to prevent these dreams from happening in real life.</p></figcaption>
+</figure>
+<br>
+<figure>
+  <img src="defendant.jpg"
+    width="500" height="350"
+    alt="negotiation"><br>
+  <figcaption><h>INNOCENT DEFENDANT (2017)</h>
+  <p>This legal-thriller drama starring by Ji Sung, Um Ki-joon, Kwon Yu-ri, Oh Chang-seok and Uhm Hyun-kyung is about 
+  a prosecutor at Seoul Central District Prosecutors' Office (Park Jung-woo) whom has lost his memory 
+  and discovers that he is convicted on death row when he awake from consciousness.
+  Was told that he suffered from temporary amnesia, Jung-woo has no idea what transpired to land him in prison.
+  He is now left with no option but to find the truth behind his condition and to prove his innocence.
+  </p></figcaption>
+</figure>
+<br>
+<figure>
+  <img src="killmehealme.jpg"
+    width="500" height="350"
+    alt="miraclecellno7">
+
+  <figcaption><h>KILL ME HEAL ME (2015)</h>
+  <p>A Korean Drama starring Ji Sung, Hwang Jung-eum, Park Seo-joon, Oh Min-suk, and Kim Yoo-ri.
+  Kill Me Heal Me is a story about Cha Do-hyun, a third-generation businessman heir with dissociative identity disorder (DID)
+  also known as multiple personality disorder who is in the aftermath of several life-threatening traumatic events.
+  Cha Do-hyun has total of seven personality that live inside him where all of them are fighting to win over the body that makes him need to stay
+  stronger in order to survive.
+  He tries to regain control over his life with the help of Oh Ri-jin, a beautiful first-year psychiatric resident who treats him in secret.
+  </p></figcaption>
+</figure><br>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

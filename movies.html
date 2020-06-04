@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>movies</title>
+	</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+figure {
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-style: Lato;
+  font-size: default;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+</style>
+</head>
+<body>
+
+<center>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <h1><div class="w3-right w3-padding-16">Nanad's Favourite Movies</div></h1>
+  </div>
+</div>
+</center>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="file:///C:/Users/Nadhirah/Documents/SEMESTER%205/IMD%20311/personal%20website/index.html">HOME</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+</div><br><br>
+
+<figure>
+  <img src="extremejob.jpg"
+    width="330" height="450"
+    alt="extremejob">
+  <figcaption><h>Extreme Job (2019)</h>
+  <p>Extreme Job is an action comedy film directed by Lee Byeong-heon, starring by Ryu Seung-ryong, Lee Hanee, Jin Seon-kyu, Lee Dong-hwi and Gong Myung.
+  The fil is about narcotics detectives work under cover in a chicken joint to try and bust a gang of organized criminals.
+  Things take an unexpected turn when their new recipe suddenly transforms the run-down restaurant into the hottest eatery in town.</p></figcaption>
+</figure>
+
+<figure>
+  <img src="negotiation2.jpg"
+    width="330" height="450"
+    alt="negotiation"><br>
+  <figcaption><h>The Negotiation (2018)</h>
+  <p>A South Korean action crime thriller film directed by Lee Jong-seok and starring Son Ye-jin and Hyun Bin.
+  The film was released on September 19, 2018.
+  The story revolves around a negotiator from the Seoul Metropolitan Police Agency's crisis negotiating team faces off against a cold-blooded hostage taker.
+  Over the course of 21 hours, she attempts to crack his unusually calm demeanor and force him to reveal his motivations.</p></figcaption>
+</figure>
+
+<figure>
+  <img src="miraclecell7.jpg"
+    width="330" height="450"
+    alt="miraclecellno7">
+
+  <figcaption><h>Miracle Cell in No. 7 (2013)</h>
+  <p>This is a South Korean comedy-drama film starring Ryu Seung-ryong, Kal So-won and Park Shin-hye.
+  The film is about a mentally challenged man wrongfully imprisoned for murder, who builds friendships with the hardened criminals in his cell, who in return help him see his daughter again by smuggling her into the prison.
+  It is based on the real life story of a man who was tortured and pleaded guilty under duress to the rape and murder of a 9-year-old girl on September 27, 1982 in Chuncheon before being finally exonerated in November 2008.</p></figcaption>
+</figure>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

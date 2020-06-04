@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nanad's Favourite Songs</title>
+</head>
+
+<style>
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body>
+
+<center>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <h1><div class="w3-right w3-padding-16">Nanad's Favourite Songs</div></h1>
+	<h2>Category - Solo</h2>
+  </div>
+</div>
+</center>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="file:///C:/Users/Nadhirah/Documents/SEMESTER%205/IMD%20311/personal%20website/index.html">HOME</a>
+
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+</div><br>
+
+<center>
+<p>Click the speaker button for sound</p><br>
+</center>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<body>
+
+<center>
+	<video autoplay loop muted <video width="320" height="240" controls>
+		<source src="deann.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+
+	<video autoplay loop muted <video width="320" height="240" controls>
+		<source src="jiyong.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+	
+	<video autoplay loop muted <video width="320" height="240" controls>
+		<source src="10cm.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+	
+	<br><br>
+	
+	<video autoplay loop muted <video width="320" height="240" controls>
+		<source src="iu.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+	
+	<video autoplay loop muted <video width="320" height="240" controls>
+		<source src="taeyeon.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+	
+	<video autoplay loop muted <video width="320" height="240" controls>
+		<source src="sunmii.mp4" type="video/mp4">
+		<source src="movie.ogg" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+	<br>
+	<br>
+	
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="file:///C:/Users/Nadhirah/Documents/SEMESTER%205/IMD%20311/personal%20website/songs.html" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="file:///C:/Users/Nadhirah/Documents/SEMESTER%205/IMD%20311/personal%20website/song2.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+	<br>
+	<br>
+  <hr>
+  <footer>
+	<p>The original video was taken from youtube and fully edited by the owner (Nadhirah)</p>
+  </footer>
+	
+</body>
+</html>

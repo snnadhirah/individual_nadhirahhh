@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>show</title>
+	</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+figure {
+  float: center;
+  width: 98%;
+  text-align: center;
+  font-style: Lato;
+  font-size: default;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+</style>
+</head>
+<body>
+
+<center>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <h1><div class="w3-right w3-padding-16">Nanad's Favourite TV Shows</div></h1>
+  </div>
+</div>
+</center>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="file:///C:/Users/Nadhirah/Documents/SEMESTER%205/IMD%20311/personal%20website/index.html">HOME</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+</div><br><br>
+
+<figure>
+  <img src="runningman.jpg"
+    width="500" height="350"
+    alt="extremejob">
+  <figcaption><h>RUNNING MAN</h>
+  <p> Running Man is a South Korean variety show, forming part of SBS' Good Sunday lineup. 
+  It was first aired on July 11, 2010. Running Man was originally classified as an "urban action variety"; a genre of variety shows in an urban environment. 
+  The MCs and guests were to complete missions at a landmark to win the race. Running Man consist of eight curent avtive members which are Yoo Jae-suk,
+  Song Ji-hyo, Ji Suk-jin, Kim Jong-kook, Lee Kwang-soo, HaHa, Jeon So-min and Yang Se-chan</p></figcaption>
+</figure>
+<br>
+<figure>
+  <img src="ros.jpg"
+    width="500" height="350"
+    alt="negotiation"><br>
+  <figcaption><h>RETURN OF SUPERMAN</h>
+  <p>This reality-variety show that airs on KBS2 is about celebrity dads whom are left to care of their kids alone for 48 hours without the help of anyone else, while their wives leave home to enjoy some relaxing time off.
+  The wives are shown leaving the home before the 48 hours begins and coming back to greet their family once the 48 hours have ended.
+  During the 48 hours the dads and children are either doing a task the wives have written out for the dads to complete, or the dads are exploring new activities with their kids.
+  Occasionally celebrity friends of the dads will stop by to interact with the kids. 
+  The show is filmed with set up cameras and cameraman hiding in tents and playhouses in each of the celebrities' actual home to make a natural surrounding situation inside the house.</p></figcaption>
+</figure>
+<br>
+<figure>
+  <img src="LAW.jpg"
+    width="500" height="350"
+    alt="miraclecellno7">
+
+  <figcaption><h>LAW OF THE JUNGLE</h>
+  <p>South Korean reality-documentary show that airs on SBS.
+  Each episode features celebrities sent to survive in remote locations around the world.
+  Kim Byung-man, a south korean comedian is the one who created this reality show. He is also called as Chief or Captain in the show.
+  On the show, celebrities, including actors and K-pop artists, join him in remote locations around the world to experience living in the wild.
+  In each location, the guests are tasked to hunt, prepare meals, and create shelter for the group.
+  Kim Byung-man is the show's only regular cast member.
+  </p></figcaption>
+</figure><br>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
